@@ -10,7 +10,7 @@ understand the official Telegram documentation) on several languages
 (even more Python too), listed below:
 
 C
-*
+=
 
 Possibly the most well-known unofficial open source implementation out
 there by `@vysheng <https://github.com/vysheng>`__,
@@ -29,10 +29,10 @@ published `here <https://core.telegram.org/tdlib/docs/>`__.
 JavaScript
 ==========
 
-`@zerobias <https://github.com/zerobias>`__ is working on
-`telegram-mtproto <https://github.com/zerobias/telegram-mtproto>`__,
-a work-in-progress JavaScript library installable via
-`npm <https://www.npmjs.com/>`__.
+`Ali Gasymov <https://github.com/alik0211>`__ made the `@mtproto/core <https://github.com/alik0211/mtproto-core>`__ library for the browser and nodejs installable via `npm <https://www.npmjs.com/package/@mtproto/core>`__.
+
+`painor <https://github.com/painor>`__ is the primary author of `gramjs <https://github.com/gram-js/gramjs>`__,
+a Telegram client implementation in JavaScript.
 
 Kotlin
 ======

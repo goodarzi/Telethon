@@ -553,6 +553,14 @@ class Message(ChatGetter, SenderGetter, TLObject, abc.ABC):
             return self.media
 
     @property
+    def dice(self):
+        """
+        The :tl:`MessageMediaDice` in this message, if it's a dice roll.
+        """
+        if isinstance(self.media, types.MessageMediaDice):
+            return self.media
+
+    @property
     def action_entities(self):
         """
         Returns a list of entities that took part in this action.
@@ -890,7 +898,7 @@ class Message(ChatGetter, SenderGetter, TLObject, abc.ABC):
         #      maybe just make it illegal to call messages from raw API?
         #      That or figure out a way to always set it directly.
         if self._client:
-            await self._client.pin_message(
+            return await self._client.pin_message(
                 await self.get_input_chat(), self.id, notify=notify)
 
     # endregion Public Methods
