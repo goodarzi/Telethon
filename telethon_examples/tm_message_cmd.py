@@ -28,8 +28,8 @@ logging.basicConfig(level=logging.ERROR)
 
 client = TelegramClient(
     session, api_id, api_hash,
-    connection=connection.ConnectionTcpMTProxyRandomizedIntermediate,
-    proxy=('mtproto ip address or domain name', 443, 'secret')
+#    connection=connection.ConnectionTcpMTProxyRandomizedIntermediate,
+#    proxy=('mtproto ip address or domain name', 443, 'secret')
 )
 
 
